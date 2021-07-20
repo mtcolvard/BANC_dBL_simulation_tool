@@ -161,7 +161,6 @@ export default class RPipeline extends RComponent {
     if (this.context.debug) {
       return (
         <li>
-          <strong>{this.constructor.name}</strong>
           <ul>
             {children}
           </ul>

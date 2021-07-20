@@ -47,7 +47,7 @@ export default class CustomNodeExample extends React.Component {
         </article>
         <RPipeline>
           <RMediaElementSource element={this.audio} />
-          <DelayLine gain={0.7} delayTime={0.3} />
+          <DelayLine gain={0.7} delayTime={0.5} />
           <RGain gain={2} />
         </RPipeline>
       </RAudioContext>
