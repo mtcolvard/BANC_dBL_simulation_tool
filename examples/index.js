@@ -17,7 +17,7 @@ render(
         <h1><strong>Noise Transmission Reduction Simulator</strong></h1>
         <h2>Lee Brenner, Bay Area Noise Control</h2>
       </article>
-        <label htmlFor="example-select">Select your scenerio: </label>
+        <label htmlFor="example-select">Select your scenario: </label>
         <select id="example-select" onChange={onExampleChange} value={example}>
         <option value="" disabled>Choose an example</option>
           {
