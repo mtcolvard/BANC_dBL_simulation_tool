@@ -13,17 +13,24 @@ render(
   (
     <main>
       <header>
-        <label htmlFor="example-select">Select an example: </label>
+      <article>
+        <h1><strong>Noise Transmission Reduction Simulator</strong></h1>
+        <h2>Lee Brenner, Bay Area Noise Control</h2>
+      </article>
+        <label htmlFor="example-select">Select your scenerio: </label>
         <select id="example-select" onChange={onExampleChange} value={example}>
-          <option value="" disabled>Choose an example</option>
+        <option value="" disabled>Choose an example</option>
           {
             Object.keys(examples).map((ex, ei) => <option key={ei} value={ex}>{ex}</option>)
           }
         </select>
       </header>
       <hr/>
+      <span></span>
       { examples[example] || null }
     </main>
   ),
   document.getElementById('app')
 );
+
+// <option value="" disabled>Choose an example</option>

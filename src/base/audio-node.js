@@ -168,15 +168,14 @@ export default class RAudioNode extends RComponent {
   render() {
     if (this.context.debug) {
       return (
-        <li>
+        <div>
           <div>
             <strong>
-              {this.constructor.name} <em>{this.props.name || ''}</em>
+               <em>{this.props.name || ''}</em>
               <sup><mark>{this.props.disconnected && 'disconnected' || ''}</mark></sup>
             </strong>
             <div>{ this.props.connectToParam ? <span> connects to <em>{this.props.connectToParam}</em></span> : null }</div>
           </div>
-          <ul>
             {
               Object.keys(this.params).map((p, pi) => {
                 if (!this.props[p] && this.props[p] !== 0) return null;
@@ -191,8 +190,7 @@ export default class RAudioNode extends RComponent {
                 return <li key={pi}>{p}: <code>{param}</code></li>;
               })
             }
-          </ul>
-        </li>
+        </div>
       );
     }
 

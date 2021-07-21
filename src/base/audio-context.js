@@ -63,9 +63,7 @@ export default class RAudioContext extends React.Component {
     if (this.props.debug) {
       return (
         <div>
-          <ul>
             {children}
-          </ul>
         </div>
       );
     }
