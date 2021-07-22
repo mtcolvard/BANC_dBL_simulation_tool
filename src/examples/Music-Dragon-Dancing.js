@@ -1,11 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import {
-  RAudioContext,
-  RGain,
-  RMediaElementSource,
-  RPipeline,
-} from '../index.js';
+import RAudioContext from '../base/audio-context.js';
+import RGain from '../audio-nodes/gain.js';
+import RMediaElementSource from '../audio-nodes/media-element-source.js';
+import RPipeline from '../graph/pipeline.js';
+
 
 export default class MusicDragonDancing extends React.Component {
   constructor(props) {

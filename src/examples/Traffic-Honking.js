@@ -1,19 +1,17 @@
 import React from 'react';
 import { render } from 'react-dom';
-import {
-  RAudioContext,
-  RGain,
-  RMediaElementSource,
-  RPipeline,
-} from '../index.js';
+import RAudioContext from '../base/audio-context.js';
+import RGain from '../audio-nodes/gain.js';
+import RMediaElementSource from '../audio-nodes/media-element-source.js';
+import RPipeline from '../graph/pipeline.js';
 
-export default class ThumpsOnFloor extends React.Component {
+export default class TrafficHonking extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       value: '0',
     };
-    this.audio = new Audio('/assets/audio/thumps-on-floor.mp3');
+    this.audio = new Audio('/assets/audio/honking-traffic.mp3');
     this.audio.autoplay = true;
     this.audio.loop = true;
     this.handleChange = this.handleChange.bind(this);

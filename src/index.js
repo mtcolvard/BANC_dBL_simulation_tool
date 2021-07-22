@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import examples from './examples.js';
+import examples from './examples/examples.js';
 
 const example = location.hash.slice(1);
 

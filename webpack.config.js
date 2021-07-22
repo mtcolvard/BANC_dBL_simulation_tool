@@ -3,11 +3,12 @@ const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const Config = {
+  entry: './index.js',
+  context: path.resolve(__dirname, 'src'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'r-audio.min.js',
+    filename: 'bundle.js',
   },
-  entry: './examples/index.js',
   mode: process.env['NODE_ENV'] || 'production',
   devtool: process.env['NODE_ENV'] === 'development' ? 'source-map' : false,
   resolve: {
@@ -25,7 +26,7 @@ const Config = {
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, 'examples'),
+    contentBase: path.join(__dirname, '/'),
     compress: true,
     port: 8080
   }
