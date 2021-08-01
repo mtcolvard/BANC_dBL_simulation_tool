@@ -36,7 +36,7 @@ const Config = {
 if (!(process.env['NODE_ENV'] === 'development')) {
   Config.output.library = 'r-audio';
   Config.output.libraryTarget = 'umd';
-  Config.entry = './index.js';
+  Config.entry = './examples/index.js';
   Config.optimization = { minimizer: [ new UglifyJsPlugin() ] };
   Config.externals = ['react', 'react-dom', 'prop-types'];
 }
