@@ -3,7 +3,7 @@ const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const Config = {
-  entry: './index.js',
+  entry: './examples/index.js',
   context: path.resolve(__dirname, 'src'),
   output: {
     path: path.resolve(__dirname, 'dist'),
