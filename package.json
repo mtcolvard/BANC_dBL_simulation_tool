@@ -6,9 +6,10 @@
   "main": "dist/r-audio.min.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server",
-    "build": "webpack",
+    "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -49,6 +50,7 @@
     "react-dom": "^16.5.0"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "prop-types": "^15.6.2",
     "react": "^16.5.0",
     "react-dom": "^16.5.0"
