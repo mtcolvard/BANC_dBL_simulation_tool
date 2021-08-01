@@ -1,9 +1,5 @@
 {
-  "name": "r-audio",
-  "version": "1.2.0",
-  "description": "A library of React components for building Web Audio graphs. ",
-  "module": "dist/r-audio.min.js",
-  "main": "dist/r-audio.min.js",
+
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server",
     "build": "webpack -p",
@@ -11,20 +7,6 @@
     "prepublishOnly": "npm run build",
     "deploy": "npm run build && gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bbc/r-audio.git"
-  },
-  "keywords": [
-    "web-audio",
-    "react"
-  ],
-  "author": "jakubfiala",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/bbc/r-audio/issues"
-  },
-  "homepage": "https://github.com/bbc/r-audio#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",

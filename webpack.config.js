@@ -5,7 +5,8 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const Config = {
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'r-audio.min.js',
+    // filename: 'r-audio.min.js',
+    filename: 'bundle.js',
   },
   entry: './examples/index.js',
   mode: process.env['NODE_ENV'] || 'production',
