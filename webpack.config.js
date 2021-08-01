@@ -7,6 +7,7 @@ const Config = {
   context: path.resolve(__dirname, 'src'),
   output: {
     path: path.resolve(__dirname, 'dist'),
+    // filename: 'r-audio.min.js',
     filename: 'bundle.js',
   },
   mode: process.env['NODE_ENV'] || 'production',
