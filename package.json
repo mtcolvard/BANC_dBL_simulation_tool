@@ -1,5 +1,5 @@
 {
-
+  "homepage": "https://github.com/mtcolvard/BANC_dBL_simulation_tool",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server",
     "build": "webpack -p",
